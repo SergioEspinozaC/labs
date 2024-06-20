@@ -1,0 +1,67 @@
+# Ignore everything in the .ddev directory
+/.ddev/*
+
+# But keep tracking important config files
+!/.ddev/config.yaml
+!/.ddev/docker-compose.override.yaml
+
+# Ignore node modules
+/node_modules/
+
+# Ignore platform specific files
+.DS_Store
+Thumbs.db
+*.wpress
+
+# Ignore logs
+*.log
+*.sql
+*.sql.gz
+
+# Ignore the wp-config.php if you are using default settings,
+# otherwise you may want to version this file.
+/wp-config.php
+
+# Ignore uploads, you might want to version some of these files.
+# /wp-content/uploads/
+
+# Ignore upgrade and backups
+/wp-content/upgrade/
+/wp-content/backups/
+
+# Ignore cache and temporary files
+/wp-content/cache/
+/wp-content/upgrade/
+/wp-content/backups/
+
+# Ignore specific plugin or theme directories as needed
+# /wp-content/plugins/some-plugin/
+# /wp-content/themes/some-theme/
+
+# Ignore specific WordPress core directories
+/wp-admin/
+/wp-includes/
+
+# Ignore Composer vendor directory
+/vendor/
+
+# Ignore specific files that may contain sensitive information
+/.env
+/.htaccess
+
+# Optional: Ignore WordPress core files if managed externally
+# You may uncomment the lines below if you manage WordPress core updates through external means.
+# This can be useful if you deploy a pre-configured WordPress setup or manage updates via Composer.
+
+#/*
+#!wp-content/
+!db.sql
+!db.sql.gz
+
+#wsl identifiers
+*Zone.Identifier
+
+#my ddev commands
+!/.ddev/commands/host/refresh
+
+.wpress
