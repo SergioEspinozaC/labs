@@ -1,0 +1,48 @@
+/* General Styles */
+
+.relative-container.elementor-widget{
+    position: relative;
+    min-height: 80vh;
+    overflow: hidden;
+}
+
+.background-element.elementor-widget {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.background-element.elementor-widget img{
+    height: 100%;
+    max-width: unset;
+    object-fit: cover;
+}
+
+.content-container.elementor-element{
+    height: 100%;
+    width: 100%;
+}
+
+.slicknav_menu{
+    display: none;
+}
+
+@media screen and (max-width: 40em) {
+    
+    .my-main-menu {
+        display: none;
+    }
+
+    .slicknav_menu{
+        display: block;
+    }
+}
+
+.ast-container{
+    margin-top: 5rem;
+}

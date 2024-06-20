@@ -1,0 +1,33 @@
+/* Header styles */
+.my-main-menu {
+  width: 90%;
+  margin: 2rem 5%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(75, 69, 69, 0.603);;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1; }
+  .my-main-menu .site-title {
+    display: inline-flex;
+    color: white; }
+
+.custom-logo {
+  max-width: 4rem; }
+
+.my-navbar {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  align-items: center; }
+  .my-navbar li {
+    list-style: none; }
+  .my-navbar li a {
+    color: white; }

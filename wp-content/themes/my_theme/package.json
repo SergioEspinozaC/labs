@@ -1,0 +1,15 @@
+{
+  "name": "my_theme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass --watch styles/scss -o styles/css",
+    "build": "node-sass styles/scss -o styles/css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

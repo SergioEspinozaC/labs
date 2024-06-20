@@ -1,0 +1,16 @@
+/**
+Theme Name: My theme
+Template: astra
+Author: Sergio Espinoza
+Description: Astra child theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: my_theme
+Domain Path: /languages
+Tags: custom-menu, custom-logo, entertainment, one-column, two-columns, left-sidebar, e-commerce, right-sidebar, custom-colors, editor-style, featured-images, full-width-template, microformats, post-formats, rtl-language-support, theme-options, threaded-comments, translation-ready, blog
+**/
+
+body .ast-primary-header-bar{
+    background-color: #ff0000;
+}
