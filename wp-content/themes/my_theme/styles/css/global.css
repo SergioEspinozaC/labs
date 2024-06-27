@@ -1,4 +1,5 @@
-/* General Styles */
+@charset "UTF-8";
+/* GENERAL STYLES */
 .relative-container.elementor-widget {
   position: relative;
   min-height: 80vh;
@@ -14,19 +15,14 @@
   height: 100%;
   width: 100%; }
 
-.background-element.elementor-widget img {
-  height: 100%;
-  max-width: unset;
-  object-fit: cover; }
-
-.content-container.elementor-element {
+.content-container.elementor-widget {
   height: 100%;
   width: 100%; }
 
 .slicknav_menu {
   display: none; }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-witdh: 40em) {
   .my-main-menu {
     display: none; }
   .slicknav_menu {
@@ -34,3 +30,44 @@
 
 .ast-container {
   margin-top: 5rem; }
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* Configura una cuadrícula con un ancho mínimo de tarjeta y ajusta automáticamente el número de columnas */
+  gap: 20px;
+  /* Espacio entre las tarjetas */
+  justify-content: center;
+  /* Centra las tarjetas horizontalmente */ }
+
+.card {
+  background-color: white;
+  width: 300px;
+  /* Ancho fijo para las tarjetas */
+  padding: 10px;
+  /* Espaciado interno */
+  list-style: none;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto;
+  /* Centra la tarjeta dentro de su celda */ }
+
+h3 {
+  color: #1E293B; }
+
+.card img {
+  width: 300px;
+  /* Ancho máximo deseado */
+  height: 300px;
+  /* Alto máximo deseado */
+  display: block;
+  object-fit: cover;
+  /* Recortar la imagen para llenar el contenedor */
+  border-radius: 5px; }
+
+.container {
+  padding: 5px 0 5px 0; }
+
+.title-projects {
+  margin-bottom: 3rem; }

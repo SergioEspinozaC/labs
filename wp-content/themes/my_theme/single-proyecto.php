@@ -29,9 +29,14 @@ get_header(); ?>
 		<?php if(have_posts()) :
 			while ( have_posts() ):
 				the_post(); ?>
-				
+				<h2 class="post-title"><?php the_title(); ?></h2>
 				<div>
 					<?php the_content(); ?>
+					<?php $foto = get_field('imagen'); ?>
+					<img class="imagen-proyecto" src="<?php echo $foto['url'] ?>" alt="<?php echo $foto['alt'] ?>">
+                	<p class="project-description"><?php echo get_field('descripcion'); ?></p>
+					<?php $foto = get_field('imagen_2'); ?>
+					<img class="imagen-proyecto" src="<?php echo $foto['url'] ?>" alt="<?php echo $foto['alt'] ?>">
 				</div>
 		<?php endwhile;
 	endif; ?>

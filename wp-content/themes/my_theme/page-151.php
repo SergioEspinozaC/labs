@@ -25,15 +25,16 @@ get_header(); ?>
 <?php endif ?>
 
 	<div id="primary" <?php astra_primary_class(); ?>>
+		<h2 class="title-projects">Mis Proyectos</h2>
 		<?php
 		astra_primary_content_top();
 
 		$paged = get_query_var('pg');
 
 		$args = [
-			'post_type' => 'post',
+			'post_type' => 'proyecto',
 			'post_per_page' => 10,
-			'paged' => 1
+			'paged' => $paged,
 		];
 
 		$query = new WP_Query($args);
@@ -45,12 +46,12 @@ get_header(); ?>
 						$query->the_post();
 						global $post;
 						?>
-						<li class="card">
+						<li class=card>
 							<a href="<?php echo get_the_permalink(); ?>">
 								<?php 
 									echo get_the_post_thumbnail( $post->ID );
 								?>
-								<div>
+								<div class="container">
 									<h3><?php echo get_the_title() ?></h3>
 								</div>
 							</a>
@@ -89,3 +90,4 @@ if ( astra_page_layout() == 'right-sidebar' ) :
 endif;
 
 get_footer();
+
