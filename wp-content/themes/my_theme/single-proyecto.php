@@ -37,6 +37,11 @@ get_header(); ?>
                 	<p class="project-description"><?php echo get_field('descripcion'); ?></p>
 					<?php $foto = get_field('imagen_2'); ?>
 					<img class="imagen-proyecto" src="<?php echo $foto['url'] ?>" alt="<?php echo $foto['alt'] ?>">
+					<?php 
+                	$model = get_field('sketchfab_url'); 
+                	if ($model): ?>
+                    <iframe src="<?php echo esc_url($model); ?>/embed" frameborder="0"></iframe>
+                	<?php endif; ?>
 				</div>
 		<?php endwhile;
 	endif; ?>
