@@ -40,7 +40,8 @@ get_header(); ?>
 					<?php 
                 	$model = get_field('sketchfab_url'); 
                 	if ($model): ?>
-                    <iframe src="<?php echo esc_url($model); ?>/embed" frameborder="0"></iframe>
+					<h2 class="post-title">Vista del Modelo 3D</h2>
+                    <iframe class="model-style" src="<?php echo esc_url($model); ?>/embed" frameborder="0"></iframe>
                 	<?php endif; ?>
 				</div>
 		<?php endwhile;
